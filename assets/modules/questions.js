@@ -1,28 +1,57 @@
-export const myQuestions = [
+export const questions = [
     {
-        question: "Die Maximalgeschwindigkeit eines Hamsters von 6 km/h wird nur übertroffen von:",
+        question: "Nach der Geburt öffnen Hamster Ihre Augen nach ...",
+        answers: {
+            a: "sieben Minuten",
+            b: "zwei Wochen",
+            c: "drei Tagen"
+        },
+        correctAnswer: "b",
+        puzzlePiece: "🐼🐹",
+        hint: "Für einen ganz besonders geliebten Mensch äh Hamster."
+    },
+    {
+        question: "Hamster sind ganz Aktive, denn sie sind ...",
+        answers: {
+            a: "Krepuskulare",
+            b: "Kathemerale",
+            c: "Zerebrale"
+        },
+        correctAnswer: "a",
+        puzzlePiece: "🎁",
+        hint: "Ein besonderer Tag im Jahr."
+    },
+    {
+        question: "Die Höchstgeschwindigkeit eines terrestrischen Hamsters von 6 km/h wird nur übertroffen von ...",
         answers: {
             a: "einer Klapperschlange",
             b: "einem Brontosaurus",
             c: "einer Stubenfliege"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        puzzlePiece: "🇨🇭🏙️🪨",
+        hint: "Ein seit Jahrtausenden bekannter Schmuckstein."
     },
     {
-        question: "Ein Zwerghamster wurde mit sehr vielen Sojabohnen in den Backentaschen gefunden, insgesamt waren es ",
+        question: "Ein Zwerghamster wurde mit sehr vielen Sojabohnen in den Backentaschen gefunden, insgesamt waren es ...",
         answers: {
-            a: "21",
-            b: "42",
+            a: "42",
+            b: "27",
             c: "66"
         },
-        correctAnswer: "b"
+        correctAnswer: "a",
+        puzzlePiece: "🛏️🛋️",
+        hint: "Ein Raum von Wänden, Boden und Decke umschlossen, den man nur durch eine Tür betreten und verlassen kann."
     },
     {
-        question: "Hamster essen ihre 💩 denn sie betreiben",
+        question: "Hamster essen oft ihre 💩 denn sie betreiben ...",
         answers: {
-            a: "Vorderdarmfermentation",
+            a: "Nebennierenelongation",
             b: "Hinterdarmfermentation",
+            c: "Leukozytendissoziation",
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        puzzlePiece: "💯➗2️💶",
+        hint: "Ein guter Anfang."
     }
 ];

@@ -1,4 +1,4 @@
-import { myQuestions } from "./modules/questions.js"
+import { questions } from "./modules/questions.js"
 import { showResults } from "./modules/result.js";
 import { quizContainer, submitButton } from "./modules/elements.js";
 
@@ -8,7 +8,7 @@ function buildQuiz() {
     const output = [];
 
     // for each question...
-    myQuestions.forEach(
+    questions.forEach(
         (currentQuestion, questionNumber) => {
 
             // variable to store the list of possible answers
@@ -31,6 +31,20 @@ function buildQuiz() {
                 `<div class="slide">
               <div class="question"> ${currentQuestion.question} </div>
               <div class="answers"> ${answers.join(" ")} </div>
+              <div class="puzzlePiece"> ${currentQuestion.puzzlePiece} </div>
+              <dialog class="hintConfirmDialog">
+                <p>Hinweis zeigen?</p>
+                <form method="dialog">
+                    <button value="cancel">Ich versuchs doch noch selber</button>
+                    <button value="default">Argh ich weiß nicht mehr weiter</button>
+                </form>
+              </dialog>
+              <dialog class="hintDialog">
+                <p>${currentQuestion.hint}</p>
+                <form method="dialog">
+                    <button>OK</button>
+                </form>
+              </dialog>
             </div>`
             );
         }
