@@ -71,14 +71,30 @@ button:hover {
     z-index: 2;
 }
 
-.quizContainer {
-    position: relative;
-    height: 200px;
-    margin-top: 40px;
+.quiz {
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+        "."
+        "."
+        ".";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 200px;
 }
 
 .quizNavigation {
     margin-top: 30px;
+    z-index: 8888;
+
 }
 
 .splash {
