@@ -79,21 +79,18 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 0px;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
     grid-template-areas:
         "."
         "."
         ".";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    margin-top: 200px;
 }
 
+
 .quizNavigation {
-    margin-top: 30px;
-    z-index: 8888;
+    margin-top: 100px;
 
 }
 
