@@ -6,25 +6,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hamster Quiz</title>
+    <title>🐹 Hamster Quiz 🐹</title>
     <meta name="description" content="Hamster Quiz">
     <meta name="author" content="Blödis">
     <link rel="stylesheet" href="assets/quiz.css">
-
+    <script type="module" src="assets/quiz.js"></script>
 </head>
 
-<body>🐹 Hamster Quiz 🐹</h1>
-    <div class="quiz-container">
+<body>
+
+    <div class="splash">
+        <h1>✨ 🐹-Quiz ✨</h1>
+        <div class="splashHeader">
+            <div>
+                <button class="startQuiz">Start</button>
+            </div>
+        </div>
+    </div>
+    <h1>🐹 Hamster Quiz 🐹</h1>
+    <div class="quizContainer">
         <div id="quiz"></div>
     </div>
-    <div class="quiz-navigation">
+    <div class="quizNavigation">
         <button id="previous">Zurück</button>
         <button id="next">Weiter</button>
         <button id="submit">Auflösung</button>
     </div>
     <div id="results"></div>
-
-    <script type="module" src="assets/quiz.js"></script>
 </body>
 
 </html>

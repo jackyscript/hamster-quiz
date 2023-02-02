@@ -1,6 +1,6 @@
 export const questions = [
     {
-        question: "Nach der Geburt öffnen Hamster Ihre Augen nach ...",
+        question: "1. Nach der Geburt öffnen Hamster Ihre Augen nach ...",
         answers: {
             a: "sieben Minuten",
             b: "zwei Wochen",
@@ -11,7 +11,7 @@ export const questions = [
         hint: "Für einen ganz besonders geliebten Mensch äh Hamster."
     },
     {
-        question: "Hamster sind ganz Aktive, denn sie sind ...",
+        question: "2. Hamster sind ganz Aktive, denn sie sind ...",
         answers: {
             a: "Krepuskulare",
             b: "Kathemerale",
@@ -22,7 +22,7 @@ export const questions = [
         hint: "Ein besonderer Tag im Jahr."
     },
     {
-        question: "Die Höchstgeschwindigkeit eines terrestrischen Hamsters von 6 km/h wird nur übertroffen von ...",
+        question: "3. Die Höchstgeschwindigkeit eines terrestrischen Hamsters von 6 km/h wird nur übertroffen von ...",
         answers: {
             a: "einer Klapperschlange",
             b: "einem Brontosaurus",
@@ -33,7 +33,7 @@ export const questions = [
         hint: "Ein seit Jahrtausenden bekannter Schmuckstein."
     },
     {
-        question: "Ein Zwerghamster wurde mit sehr vielen Sojabohnen in den Backentaschen gefunden, insgesamt waren es ...",
+        question: "4. Ein Zwerghamster wurde mit sehr vielen Sojabohnen in den Backentaschen gefunden, insgesamt waren es ...",
         answers: {
             a: "42",
             b: "27",
@@ -44,7 +44,7 @@ export const questions = [
         hint: "Ein Raum von Wänden, Boden und Decke umschlossen, den man nur durch eine Tür betreten und verlassen kann."
     },
     {
-        question: "Hamster essen oft ihre 💩 denn sie betreiben ...",
+        question: "5. Hamster essen oft ihre 💩 denn sie betreiben ...",
         answers: {
             a: "Nebennierenelongation",
             b: "Hinterdarmfermentation",

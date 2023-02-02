@@ -4,7 +4,11 @@ body {
     color: #333;
     font-weight: 300;
     text-align: center;
-    background-color: seashell;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#f24013 1.4000000000000001px, transparent 1.4000000000000001px), radial-gradient(#f24013 1.4000000000000001px, #e5e5f7 1.4000000000000001px);
+    background-size: 56px 56px;
+    background-position: 0 0, 28px 28px;
 }
 
 h1 {
@@ -34,7 +38,7 @@ h1 {
 
 button {
     font-size: 22px;
-    background-color: #279;
+    background-color: firebrick;
     color: #fff;
     border: 0px;
     border-radius: 3px;
@@ -44,7 +48,7 @@ button {
 }
 
 button:hover {
-    background-color: #38a;
+    background-color: #f18b14;
 }
 
 .puzzlePiece {
@@ -62,17 +66,47 @@ button:hover {
     transition: opacity 0.5s;
 }
 
-.active-slide {
+.activeSlide {
     opacity: 1;
     z-index: 2;
 }
 
-.quiz-container {
+.quizContainer {
     position: relative;
     height: 200px;
     margin-top: 40px;
 }
 
-.quiz-navigation {
+.quizNavigation {
     margin-top: 30px;
+}
+
+.splash {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 300ms;
+    z-index: 9999;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #f24013 12%, transparent 12.5%, transparent 87%, #f24013 87.5%, #f24013), linear-gradient(150deg, #f24013 12%, transparent 12.5%, transparent 87%, #f24013 87.5%, #f24013), linear-gradient(30deg, #f24013 12%, transparent 12.5%, transparent 87%, #f24013 87.5%, #f24013), linear-gradient(150deg, #f24013 12%, transparent 12.5%, transparent 87%, #f24013 87.5%, #f24013), linear-gradient(60deg, #f2401377 25%, transparent 25.5%, transparent 75%, #f2401377 75%, #f2401377), linear-gradient(60deg, #f2401377 25%, transparent 25.5%, transparent 75%, #f2401377 75%, #f2401377);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.hidden {
+    transition: 0.5s;
+    display: none;
+}
+
+.splashHeader {
+    height: 90%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
