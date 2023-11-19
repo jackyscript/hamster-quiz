@@ -1,9 +1,10 @@
 import { questions } from "./modules/questions.js"
 import { showResults } from "./modules/result.js";
 import { quizContainer, submitButton, splashScreen, startQuizButton } from "./modules/elements.js";
+import { StyleConstants as Style } from "./modules/styles.js";
 
 //splash IIFE
-(function () {
+(function initSplash() {
 
     startQuizButton.addEventListener('click', () => {
 
@@ -38,8 +39,7 @@ function buildQuiz() {
 
 function addAnswer(currentQuestion, answers, questionNumber) {
 
-    Object.keys(currentQuestion.answers).forEach((letter) => {
-        // ...add an HTML radio button
+    Object.keys(currentQuestion.answers).forEach(letter => {
         answers.push(
             `<label>
                 <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -78,22 +78,22 @@ function addQuestionSlide(output, currentQuestion, answers) {
 
 function showSlide(n) {
 
-    slides[currentSlide].classList.remove('activeSlide');
-    slides[n].classList.add('activeSlide');
+    slides[currentSlide].classList.remove(Style.ACTIVE);
+    slides[n].classList.add(Style.ACTIVE);
 
     currentSlide = n;
 
-    previousButton.style.display = currentSlide === 0 ? 'none' : 'inline-block';
+    previousButton.style.display = currentSlide === 0 ? Style.HIDDEN : Style.VISIBLE;
 
     if (currentSlide === slides.length - 1) {
 
-        nextButton.style.display = 'none';
-        submitButton.style.display = 'inline-block';
+        nextButton.style.display = Style.HIDDEN;
+        submitButton.style.display = Style.VISIBLE;
 
     } else {
 
-        nextButton.style.display = 'inline-block';
-        submitButton.style.display = 'none';
+        nextButton.style.display = Style.VISIBLE;
+        submitButton.style.display = Style.HIDDEN;
 
     }
 }
